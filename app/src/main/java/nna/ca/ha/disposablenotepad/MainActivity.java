@@ -22,8 +22,6 @@ public class MainActivity extends Activity {
 
     EditText editText;
     LinearLayout layout;
-    EditText notepad;
-    FrameLayout layout2;
     String buofbu;
 
     @Override
@@ -32,7 +30,8 @@ public class MainActivity extends Activity {
         setContentView(R.layout.mainfragment);
         editText = findViewById(R.id.notepad);
         layout = findViewById(R.id.Layout);
-        notepad = findViewById(R.id.notepad);
+
+        editText.requestFocus();
 
         SharedPreferences pref = getSharedPreferences("notepad", Context.MODE_PRIVATE);
 
